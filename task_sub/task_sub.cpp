@@ -1,8 +1,6 @@
 ﻿#include <iostream>
-#include <windows.h>
 
 using  namespace std;
-// ЗАполняет случайными числами
 
 void FillRand(int arr[],const unsigned int n);
 void Print(int arr[], const unsigned int n);
@@ -134,6 +132,8 @@ void minValueIn(int arr[], const unsigned int n)
 
 void FillRand(int arr[], const unsigned int n) 
 {
+	srand(static_cast <unsigned int> (time(0))); // Запустил генератор случайный чисел повремени
+	
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % 100;
