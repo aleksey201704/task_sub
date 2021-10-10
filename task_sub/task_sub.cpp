@@ -15,6 +15,7 @@ void shiftRight (int arr[], const unsigned int n, int Quantity);
 
 
 
+
 int  main()
 {
 	setlocale(LC_ALL, "Russian");
